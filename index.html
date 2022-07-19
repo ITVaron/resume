@@ -7,81 +7,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="резюме, Денис, информация">
     <meta name="description" content="На данном сайте будет подробная информация обо мне.">
+    <link rel="stylesheet" href="style.css">
     <title>Резюме</title>
 </head>
 
 <body>
-    <img src="img.png" alt="Error" width="250">
-    <h1>Денис Теплов</h1>
-    <p>Я обучаюсь <strong>программированию</strong>, занимаюсь <strong>спортом</strong>, <strong>путешествую.</strong>
-    </p>
-    <p>Люблю <em>заниматься спортом, программировать, путешествовать.</em></p>
+    <div class="container">
+        <div class="info">
+            <img class="image" src="img.png" alt="Error">
+            <div class="info-text">
+                <h1>Денис Теплов</h1>
+                <p>Я обучаюсь программированию, занимаюсь спортом, путешествую.
+                </p>
+                <p>Люблю заниматься спортом, программировать, путешествовать.</p>
+            </div>
+            <h2>Список социальных сетей</h2>
+            <a href="https://vk.com/denulyanov7" target="_blank">ВКонтакте</a> |
+            <a href="https://github.com/ITVaron" target="_blank">GitHub</a> |
+            <a href="https://www.youtube.com/channel/UC2CpJa9jp4-eRmVfg-rrLLg" target="_blank">YouTube</a>
+        </div>
+        <div class="card">
+            <div class="card hobby">
+                <h2 class="title">Мои хобби</h2>
+                <ol class="list">
+                    <li>Спорт</li>
+                    <li>Программирование</li>
+                    <li>Путешествие</li>
+                </ol>
 
-    <h2>Список социальных сетей</h2>
-    <a href="https://vk.com/denulyanov7" target="_blank">ВКонтакте</a> |
-    <a href="https://github.com/ITVaron" target="_blank">GitHub</a> |
-    <a href="https://www.youtube.com/channel/UC2CpJa9jp4-eRmVfg-rrLLg" target="_blank">YouTube</a>
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Спорт</li>
-        <li>Программирование</li>
-        <li>Путешествие</li>
-    </ol>
-    <h2>Школа</h2>
-    <table width="350">
-        <thead>
-            <tr>
-                <th>Класс</th>
-                <th>Период обучения</th>
-                <th>Успеваемость</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Пятый</td>
-                <td>2018 - 2019</td>
-                <td>Хорошо</td>
+            </div>
+            <div class="card school">
+                <h2 class="title">Школа</h2>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>Пятый</td>
+                            <td>2018 - 2019</td>
+                            <td>Хорошо</td>
 
-            </tr>
-            <tr>
-                <td>Шестой</td>
-                <td>2019 - 2020</td>
-                <td>Хорошо</td>
-            </tr>
-            <tr>
-                <td>Седьмой</td>
-                <td>2019 - 2020</td>
-                <td>Хорошо</td>
-            </tr>
-            <tr>
-                <td>Восьмой</td>
-                <td>2021 - 2022</td>
-                <td>Хорошо</td>
-            </tr>
-            <tr>
-                <td>Девятый</td>
-                <td>2022 - сейчас</td>
-                <td>Хорошо</td>
-            </tr>
-        </tbody>
-    </table>
-    <h2>Связаться со мной</h2>
-    <form>
-        <div>
-            <label for="text">Ваше имя:</label>
-            <input type="text" id="text" placeholder="Введите имя">
+                        </tr>
+                        <tr>
+                            <td>Шестой</td>
+                            <td>2019 - 2020</td>
+                            <td>Хорошо</td>
+                        </tr>
+                        <tr>
+                            <td>Седьмой</td>
+                            <td>2019 - 2020</td>
+                            <td>Хорошо</td>
+                        </tr>
+                        <tr>
+                            <td>Восьмой</td>
+                            <td>2021 - 2022</td>
+                            <td>Хорошо</td>
+                        </tr>
+                        <tr>
+                            <td>Девятый</td>
+                            <td>2022 - сейчас</td>
+                            <td>Хорошо</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card contact">
+                <form action="/">
+                    <h2 class="form">Связаться со мной</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="text">Ваше имя:</label>
+                            <input type="text" id="text" placeholder="Введите имя">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Ваш email:</label>
+                            <input type="email" id="email" placeholder="Введите email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Ваше сообщение:</label>
+                        <br>
+                        <textarea placeholder="Введите сообщение..." id="message" cols="25" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Отправить!</button>
+                </form>
+            </div>
         </div>
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
-        </div>
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea placeholder="Введите сообщение..." id="message" cols="25" rows="5"></textarea>
-        </div>
-        <button type="submit">Отправить!</button>
-    </form>
+    </div>
 </body>
 
 </html>
